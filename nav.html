@@ -32,7 +32,7 @@
 		}
 
 		.navMenu a {
-			color: #272727;
+			color: #9C9C9C;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -40,28 +40,28 @@
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #9C9C9C;
 		}
 
 		.border {
-			border: 1px solid #cccccc;
+			border: 2px solid #9C9C9C;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #ff0000;
 		}
 	</style>
 </head>
 
 <body>
+	<body bgcolor="#191919"> 
 
 	<nav class="navMenu  border">
+
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
-		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bars-progress"></i> Projects</a>
 		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
 
 	</nav>
@@ -69,7 +69,7 @@
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
@@ -78,32 +78,12 @@
 		function navigate(id) {
 
 			if (id == 'home')
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "inbox")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "week")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "month")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "projects")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "business")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "tasks")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "knowledge")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "topics")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "notes")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "media")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "resourses")
-				window.open("https://example.com3", '_blank').focus();
-			else if (id == "lifewiki")
-				window.open("https://example.com", '_blank').focus();
-
+				window.open("https://www.notion.so/Home-Page-a4fed5646eb24d23badfa0aa0025bf16", '_blank').focus();
+			else if (id == 'projects')
+				window.open("https://www.notion.so/Projects-a31ccae653764e26aeba449bd2e7cb3d", '_blank').focus();
+			else if (id == 'notes')
+				window.open("https://www.notion.so/d412a1ba024343d895c15d800c0ac809?v=837d3e18eb224942ac8c488ca2b0687a", '_blank').focus();
+		
 		}
 	</script>
 
